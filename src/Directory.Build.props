@@ -1,0 +1,18 @@
+<Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+    <PropertyGroup>
+        <OutDir>../out</OutDir>
+        <OutputPath>$(OutDir)</OutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <UseCommonDirectory>true</UseCommonDirectory>
+        <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+        <FileVersion>$(Version)</FileVersion>
+        <InformationalVersion>$(Version)</InformationalVersion>
+        <GitCommitShortSha>$(GIT_COMMIT_SHORT_SHA)</GitCommitShortSha>
+        <InformationalVersion Condition=" '$(GitCommitShortSha)' != '' ">$(Version)+$(GitCommitShortSha)</InformationalVersion>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    </PropertyGroup>
+</Project>
