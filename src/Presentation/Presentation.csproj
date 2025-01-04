@@ -12,4 +12,12 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+
+    <!--#if (aspire)-->
+    <ProjectReference Include="..\ServiceDefaults\ServiceDefaults.csproj" />
+    <!--#endif -->
+    </ItemGroup>
+
 </Project>
