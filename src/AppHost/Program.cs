@@ -1,5 +1,9 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.Presentation>("presentation");
+var applicationProject = builder.AddProject<Projects.Application>("application");
+var infrastructureProject = builder
+    .AddProject<Projects.Infrastructure>("infrastructure")
+    .WithReference(applicationProject);
+builder.AddProject<Projects.Presentation>("presentation").WithReference(infrastructureProject);
 
 builder.Build().Run();

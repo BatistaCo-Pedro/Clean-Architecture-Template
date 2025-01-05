@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "src\AppHost\AppH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "src\ServiceDefaults\ServiceDefaults.csproj", "{C8D50009-5770-4394-B2CC-C092AF6E1B0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Aspire", "Tests.Aspire\Tests.Aspire.csproj", "{EE74801D-E696-4674-9A01-B49F6EC42B62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Aspire", "tests\Tests.Aspire\Tests.Aspire.csproj", "{EE74801D-E696-4674-9A01-B49F6EC42B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
