@@ -25,37 +25,6 @@ Clean Architecture, developed by Robert C. Martin (Uncle Bob), promotes the sepa
 3. **Infrastructure Layer**: Handles data access, persistence, and external services.
 4. **Presentation Layer**: Manages user interaction (APIs, UI components, Controllers).
 
-## Project Structure
-
-```text
-/src
- /Application
-   - DependencyInjection.cs
-   - GlobalUsings.cs
-   /Abstractions
-   /Services
-   /Domain
-      /Common
-      /DataModels
-      /Entities
-      /Enums
-      /Types
- /Infrastructure
-   - DependencyInjection.cs
-   - GlobalUsings.cs
-   /Database
-   /Repositories
-   /Implementations
- /Presentation
-   - DependencyInjection.cs
-   - GlobalUsings.cs
-   /Controllers
-   /EventHandlers
-/tests
-  - Tests.Unit
-  - Tests.Integration
-```
-
 ### Application Layer
 
 - **Entities**: Represent business models. Entities have unique identities, while Value Objects do not.
